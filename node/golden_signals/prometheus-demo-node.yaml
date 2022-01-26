@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
@@ -35,7 +35,7 @@ spec:
         run: prometheus-demo-node
     spec:
       containers:
-      - image: docker.io/yurigrinshteyn/prometheus-demo-node:latest
+      - image: docker.io/jiaqi13/prometheus-demo-node:latest
         imagePullPolicy: Always
         name: prometheus-demo-node
         resources: {}
